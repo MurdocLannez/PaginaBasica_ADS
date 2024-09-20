@@ -1,0 +1,149 @@
+.custom-img {
+    width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+body {
+    background-color: #C0D9D9;
+}
+
+/*parte do css para ajustar o rodapé junto do body, mesmo com pouco conteúdo*/
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+/*nav bar responsiva e bela*/
+.navback {
+    background-color: #6B8E8E;
+    padding: 20px;
+}
+
+.navback .navbar-nav .nav-link {
+    position: relative;
+    padding: 10px 15px;
+    color: #F0F4F4;
+    transition: color 0.3s;
+}
+
+.navback .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #F0F4F4;
+    transition: width 1s;
+}
+
+.navback .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navback .navbar-nav .nav-link:hover {
+    color: #E8F4F0;
+}
+
+.custom-bg {
+    background-color: #6B8E8E;
+    padding: 20px;
+}
+
+/* rodapé games */
+.custom-footer {
+    background-color: #6B8E8E; 
+    color: #040108fa;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Garante que o rodapé fique no final da página */
+}
+
+/* carousel todo estranho, com container, imagens e etc */
+#carouselExampleIndicators {
+    max-width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.carousel-item {
+    padding: 10px; 
+    box-sizing: border-box;     
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 5px solid #343a40;
+    object-position: center;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(0%);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    filter: invert(100%); /* cor da seta invertida */
+    transition: filter 0.3s ease;
+}
+
+h5 {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: #1116164d;
+}
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px; /* Reduz o tamanho do texto em telas pequenas */
+        padding: 5px; /* Ajusta o padding para evitar que ocupe muito espaço */
+    }
+
+    .carousel-caption {
+        bottom: 10px; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+}
+
+    .carousel-caption h5 {
+        font-size: 18px;
+        color: white;
+        text-shadow: 1px 1px 2px black; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 10px; 
+    }
+
+    h5:hover {
+        background-color: rgb(44, 52, 52, 0.6);
+        transition: color 0.3s ease;
+        border: 2px solid black;
+        
+    }
+
+    .navback .navbar-nav .nav-link {
+        transition: color 1.2s; 
+    }
+
+    .navback .navbar-nav .nav-link::after {
+        transition: width 2.5s; 
+    }
+
